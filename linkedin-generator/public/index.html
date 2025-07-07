@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Post Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 LinkedIn Post Generator</h1>
+            <p>AI-powered posts based on current research and trends</p>
+        </header>
+
+        <main>
+            <form id="post-form" class="generator-form">
+                <div class="form-group">
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">Select a topic...</option>
+                        <option value="behavioral-psychology">Behavioral Psychology</option>
+                        <option value="leadership-trends">Leadership Trends</option>
+                        <option value="workplace-innovation">Workplace Innovation</option>
+                        <option value="management-insights">Management Insights</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="audience">Target Audience:</label>
+                    <select id="audience" name="audience" required>
+                        <option value="">Select audience...</option>
+                        <option value="middle-managers">Middle Managers</option>
+                        <option value="hr-professionals">HR Professionals</option>
+                        <option value="executives">Executives</option>
+                        <option value="entrepreneurs">Entrepreneurs</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="style">Style:</label>
+                    <select id="style" name="style">
+                        <option value="professional">Professional</option>
+                        <option value="casual">Casual</option>
+                        <option value="thought-leadership">Thought Leadership</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="generate-btn">
+                    <span class="btn-text">Generate LinkedIn Post</span>
+                    <span class="loading hidden">Generating...</span>
+                </button>
+            </form>
+
+            <div id="result" class="result-section hidden">
+                <h2>Your LinkedIn Post:</h2>
+                <div id="post-content" class="post-content"></div>
+                
+                <div class="post-metadata">
+                    <div class="metadata-item">
+                        <strong>Optimal Posting Time:</strong>
+                        <span id="optimal-time"></span>
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Suggested Hashtags:</strong>
+                        <span id="hashtags"></span>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button id="copy-btn" class="action-btn">📋 Copy Post</button>
+                    <button id="regenerate-btn" class="action-btn secondary">🔄 Generate Another</button>
+                </div>
+            </div>
+
+            <div id="error" class="error-message hidden"></div>
+        </main>
+
+        <footer>
+            <p>Powered by OpenAI and current behavioral psychology research</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
