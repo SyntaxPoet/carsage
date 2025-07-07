@@ -12,12 +12,17 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "openai": "^4.20.1",
-    "axios": "^1.6.0"
+    "axios": "^1.6.0",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "express-validator": "^7.0.1",
+    "express-slow-down": "^2.0.1",
+    "uuid": "^9.0.1"
   },
   "engines": {
     "node": "18.x"
   },
-  "keywords": ["linkedin", "ai", "content-generation", "social-media", "behavioral-psychology"],
+  "keywords": ["linkedin", "ai", "content-generation", "social-media", "behavioral-psychology", "security"],
   "author": "SyntaxPoet",
   "license": "MIT"
 }
